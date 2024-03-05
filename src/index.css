@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+}
+.navbar-logo {
+ font-weight: bold;
+ font-size: 24px;
+}
+a {
+  text-decoration: none;
+}
+h4 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.navbar-items a {
+  margin-left: 10px;
+  color: #000;
+  font-size: 15px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.navbar-items a:hover {
+  color: #007bff; /* Change color on hover */
+  transition: .5s;
+}
+
+/* Blog Cards  */
+.blog-card {
+  display: flex;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-card-image {
+  width: 500px;
+  height: 250px;
+  object-fit: cover; /* Ensures the image fills the container */
+}
+
+.blog-card-details {
+  padding: 20px;
+  flex-grow: 1; /* Allows the details to grow to fill the remaining space */
+  position: relative; /* Needed for absolute positioning */
+}
+
+.blog-card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.blog-card-subtitle {
+  margin-bottom: 10px;
+}
+
+.blog-card-date {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 14px;
+}
+
+.blog-card-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .blog-card {
+    flex-direction: column;
+  }
+
+  .blog-card-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .blog-card-details {
+    padding: 10px;
+  }
+
+  .blog-card-date,
+  .blog-card-button {
+    position: static;
+  }
+}
+
+
+/* Row Cards  */
+.row-blog-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%; /* Adjust width as needed */
+}
+
+.row-blog-card {
+  width: 32%; /* Adjust width for 3 columns */
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Existing card shadow */
+}
+
+.row-blog-card img {
+  width: 100%;
+  height: 200px; /* Adjust height as needed */
+  object-fit: cover; /* Ensures image covers the whole area */
+  border-radius: 2px; /* Image border-radius */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Image shadow */
+}
+
+.content {
+  padding: 20px;
+}
+
+.content h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.content p.subtitle {
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info .date {
+  font-size: 12px;
+  color: #999;
+}
+
+.info .read-more {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+  .row-blog-cards {
+    width: 90%;
+  }
+
+  .row-blog-card {
+    width: 48%;
+  }
+}
+
+@media (max-width: 480px) {
+  .row-blog-card {
+    width: 100%;
+  }
+}
+
+/* blog-details  */
+.blog-details-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.author-info {
+  margin-bottom: 20px;
+}
+
+.author-info p {
+  margin: 0;
+}
+
+.article-title {
+  text-align: left;
+}
+
+.blog-details {
+  text-align: left;
+}
+
+
+/* Skeleton CSS */
+.skeleton-loader {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.skeleton-header {
+  width: 100%;
+  height: 50px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.skeleton-content {
+  width: 100%;
+  height: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.blog-img-header {
+  width: 100%;
+  height: auto;
+  max-height: 300px; /* Adjust the maximum height as needed */
+  object-fit: cover; /* Ensure the image covers the entire container */
+  border-radius: 8px; /* Add border-radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box-shadow */
+}
+/* Animation */
+@keyframes skeleton-pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 0.8; }
+  100% { opacity: 0.6; }
+}
+
+.skeleton-loader div {
+  animation: skeleton-pulse 1.5s infinite ease-in-out;
+}

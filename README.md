@@ -1,8 +1,26 @@
-# React + Vite
+A simple React application built with Vite that fetches and displays blog data from TechCrunch.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Installation
+Clone the repository:
 
-Currently, two official plugins are available:
+bash
+Copy code
+git clone 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+cd react-project
+
+npm install
+
+Start the development server:
+
+npm run dev
+
+Features
+Fetches blog data from the TechCrunch API.
+Displays a list of blog posts with titles, excerpts, publication dates, and author information.
+Clicking on a blog post navigates to a detailed view showing the full content, publication date, author, and featured image.
+Technologies Used
+React
+Vite
+React Router DOM
+Fetch API
