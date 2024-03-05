@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import './App.css';
-import SkeletonLoader from './SkeletonLoader';
+import SkeletonLoader from '../components/SkeletonLoader';
 
 
 function convertToGMT(dateString) {

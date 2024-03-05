@@ -1,8 +1,9 @@
 // App.jsx
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './Navbar';
-import BlogDetails from './BlogDetails';
-import BlogLists from './BlogLists';
+import Navbar from './components/Navbar';
+import BlogDetails from './pages/BlogDetails';
+import BlogLists from './pages/BlogLists';
+import BackToTopButton from './components/BackToTopButton';
 
 const App = () => {
   return (
@@ -12,7 +13,9 @@ const App = () => {
         <Route path="/" element={<BlogLists />} />
         <Route path="/blogs/:id" element={<BlogDetails />} />
       </Routes>
+      <BackToTopButton />
     </Router>
+    
   );
 }
 

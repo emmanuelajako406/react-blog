@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
-import SkeletonLoader from './SkeletonLoader';
+import SkeletonLoader from '../components/SkeletonLoader';
 import { useParams } from 'react-router-dom';
 import BlogLists from './BlogLists';
 

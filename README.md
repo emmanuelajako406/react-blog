@@ -3,9 +3,8 @@ A simple React application built with Vite that fetches and displays blog data f
 Installation
 Clone the repository:
 
-bash
-Copy code
-git clone 
+
+git clone https://github.com/emmanuelajako406/react-blog.git
 
 cd react-project
 

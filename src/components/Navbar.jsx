@@ -1,5 +1,6 @@
-// Navbar.jsx
+import React from 'react';
 import { Link } from 'react-router-dom';
+import ProgressBar from './ProgressBar';
 
 const Navbar = () => {
   return (
@@ -10,8 +11,9 @@ const Navbar = () => {
       <div className="navbar-social">
         <Link to="/">Home</Link>
       </div>
+      <ProgressBar />
     </nav>
   );
-}
+};
 
 export default Navbar;
